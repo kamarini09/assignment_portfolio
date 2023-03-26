@@ -1,0 +1,85 @@
+:root {
+  --color-blue: #213f98;
+  --color-pink: #f2d4d7;
+  --color-lightpink: #f6eceb;
+  --color-beige: #fbf0df;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2em;
+}
+
+body {
+  background-color: var(--color-lightpink);
+}
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1 {
+  color: var(--color-blue);
+  font-family: "Noto Serif Display", serif;
+  margin-bottom: 1rem;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+img {
+  max-width: 100%;
+  width: fit-content;
+}
+
+p,
+figcaption {
+  color: var(--color-blue);
+  opacity: 0.9;
+  line-height: 1.7;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 2rem;
+}
+.grid:first-child {
+  padding: 2rem;
+}
+.grid_resp p {
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+.links {
+  display: flex;
+  flex-direction: row;
+  gap: 7rem;
+}
+a {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: var(--color-blue);
+  color: var(--color-pink);
+  border: 2px solid var(--color-blue);
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+a:hover {
+  background-color: var(--color-pink);
+  color: var(--color-blue);
+}
